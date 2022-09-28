@@ -23,8 +23,8 @@ file_object.close()
 #Pretend we read one line of data from the file
 #lineString = line_list[20]
 for lineString in line_list:
-    metadata = '#','u'
-    if lineString.startswith(metadata):
+    
+    if lineString[0] in ('#','u'):
         continue
     
     #Split the string into a list of data items
